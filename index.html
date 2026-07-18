@@ -33,7 +33,7 @@
 
         async function loadProducts() {
             const { data: products, error } = await supabase
-                .from('products')
+                .from('Products')
                 .select('*')
                 .order('created_at', { ascending: false });
 
