@@ -88,7 +88,7 @@
                     .getPublicUrl(fileName);
 
                 // 3. Save product to database
-                const { error: dbErr } = await supabase.from('products').insert({
+                const { error: dbErr } = await supabase.from('Products').insert({
                     product_name: document.getElementById('name').value,
                     description: document.getElementById('desc').value,
                     category: document.getElementById('cat').value,
